@@ -1,4 +1,5 @@
 import React from "react";
+import './Main.css'
 import {Link} from "react-router-dom";
 
 const Like1 = () => {
@@ -30,7 +31,7 @@ const Like2 = () => {
 const Item = (props) => {
     const like = props.like ? <Like1/> : <Like2/>
     return (
-        <fieldset>
+        <fieldset className="item">
             <table style={{color: "white"}}>
                 <tr>
                     <th colSpan={2} style={{textAlign: "left", fontSize: "1.3em"}}>
@@ -62,9 +63,15 @@ const Item = (props) => {
 
 const Main = (props) => {
     return (
-        <div>
+        <div className="full-width">
             <h3>인기 있는 시험</h3>
-            <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+            <div className="item-setting">
+                <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+                <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+                <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+                <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+                <Item like={0} title={"123"} username={"user"} subject={"영어"} likeCount={0} totalCount={0} problemCount={0} answerRate="10"/>
+            </div>
         </div>
     )
 }
