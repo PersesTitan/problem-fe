@@ -65,14 +65,12 @@
   stroke: red;
   width: 1em;
   height: 1em;
-  /*width: 3.2rem;*/
-  /*height: 3.2rem;*/
 }
 
 .App-footer {
   background: #000000;
   color: #7e7e7e;
-  align-content: center;
+  align-content: start;
   align-items: initial;
   margin: auto;
   display: flex;
@@ -80,11 +78,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1%;
-}
-
-.App-footer img {
-  width: auto;
-  height: auto;
+  font-size: 0.8em;
 }
 
 .App-footer th {
@@ -92,6 +86,14 @@
 }
 
 .App-footer a {
+  display: flex;
   color: #7e7e7e;
   text-decoration-line: none;
+}
+
+.img-style {
+  margin-left: 3px;
+  height: 15px;
+  text-align: center;
+  horiz-align: center;
 }
