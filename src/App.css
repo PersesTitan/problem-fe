@@ -45,6 +45,8 @@
   background-color: #282c34;
   display: flex;
   align-content: center;
+  padding: 2em;
+  justify-content: center;
 }
 
 .App-link {
